@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/profileSubtitle"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""
+        android:id="@+id/dummy"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center_horizontal" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/profileStatus"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

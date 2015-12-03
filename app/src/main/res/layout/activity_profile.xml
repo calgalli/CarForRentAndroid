@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jed.carforrent.profileActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000000">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:id="@+id/logout_button"
+                android:layout_gravity="center_vertical|right"
+                android:onClick="onLogoutClick"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="\u3008"
+                android:id="@+id/back_profile"
+                android:layout_gravity="center_vertical|left"
+                android:onClick="onBackClick"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+        </FrameLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profilelistView"
+            android:fastScrollEnabled="false"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+</RelativeLayout>

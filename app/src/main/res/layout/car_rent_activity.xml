@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="#ffe1e1e1">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:id="@+id/textViewCarrent"
+            android:background="#ffd7d7d7"
+            android:text="CAR FOR RENT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Car model :"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textViewCarrent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="10dp"
+            android:background="#ffd7d7d7" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Company  :"
+            android:id="@+id/car_com"
+            android:layout_below="@+id/line6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Camry"
+            android:id="@+id/textCar_secect_car"
+            android:textColor="#ff134e97"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="andamanCar"
+            android:id="@+id/textCar_secect_company"
+            android:layout_alignTop="@+id/car_com"
+            android:layout_toRightOf="@+id/car_com"
+            android:layout_toEndOf="@+id/car_com"
+            android:textColor="#ff134e97"
+            android:layout_marginLeft="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_car"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:background="#ffe1e1e1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffd7d7d7"
+            android:text="DEPART :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3">
+            <Button
+                android:id="@+id/bt_car_rentdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DATE"
+                android:textColor="#ff134e97" />
+            <Button
+                android:id="@+id/bt_car_renttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TIME"
+                android:textColor="#ff134e97" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/return_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout_from"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="#ffe1e1e1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffd7d7d7"
+            android:text="RETURN  :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4">
+            <Button
+                android:id="@+id/bt_car_returndate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DATE"
+                android:textColor="#ff134e97" />
+            <Button
+                android:id="@+id/bt_car_returntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TIME"
+                android:textColor="#ff134e97" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_view"
+        android:padding="5dp"
+        android:background="#ffe1e1e1"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/Buttom">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="DETAIL :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="#ffd7d7d7"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/textDetail"
+                android:layout_above="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textCar_pickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PICK UP :"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingRight="18dp"/>
+
+                <EditText
+                    android:id="@+id/editCar_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textImeMultiLine"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:id="@+id/linearLayout"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE :"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingRight="18dp" />
+
+            <EditText
+                android:id="@+id/editCar_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textDetail"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="30dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Buttom">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffdcdcdc"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0.0"
+                android:textStyle="bold"
+                android:id="@+id/totalPrice"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff153172"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalPrice"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="BAHT"
+                android:id="@+id/textBaht"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff153172"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:background="#ff153172"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BOOK   >"
+                android:id="@+id/bt_car_book"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="1.0"
+                android:textColor="#ffffffff"
+                android:background="#ff153172" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

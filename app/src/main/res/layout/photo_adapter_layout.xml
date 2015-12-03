@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/adapterImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/adapterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/adapterImageView"
+            android:layout_toRightOf="@+id/adapterImageView"
+            android:text="CodeLearn Chapter 1"
+            android:textSize="16sp"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:id="@+id/adapterSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adapterImageView"
+            android:layout_toRightOf="@+id/adapterImageView"
+            android:text="Description"
+            android:textSize="14sp"
+            android:layout_gravity="bottom|left" />
+    </LinearLayout>
+
+</LinearLayout>

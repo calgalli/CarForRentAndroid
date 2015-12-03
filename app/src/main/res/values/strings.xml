@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CarForRent</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">profileActivity</string>
+    <string name="title_activity_select_car">selectCarActivity</string>
+    <string name="title_activity_select_car_company">selectCarCompanyActivity</string>
+    <string name="title_activity_select_destination">selectDestinationActivity</string>
+    <string name="title_activity_select_xfer_company">selectXferCompanyActivity</string>
+    <string name="title_activity_select_boat">selectBoatActivity</string>
+    <string name="title_activity_select_boat_company">selectBoatCompanyActivity</string>
+</resources>
